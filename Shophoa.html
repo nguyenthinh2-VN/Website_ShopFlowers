@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Hoa Pastel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Hoa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-star-and-crescent"></i> cái tiệm hoa hòee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gioi-thieu">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dich-vu">Dịch Vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#san-pham">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tin-tuc">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lien-he">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Banner -->
+    <div id="flowerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://files.catbox.moe/zszvne.webp"
+                    class="d-block w-100" alt="Hoa 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Chào Mừng Đến Với <i class="fa-solid fa-star-and-crescent"></i><i>cái tiệm hoa hòe </i></h1>
+                    <p>"Khi lời nói không đủ, hãy để hoa thay bạn."</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=1500&q=80"
+                    class="d-block w-100" alt="Hoa 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Hoa Tươi Mỗi Ngày</h1>
+                    <p>Mang vẻ đẹp thiên nhiên vào không gian của bạn</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1464982326199-86f32f81b211?auto=format&fit=crop&w=1500&q=80"
+                    class="d-block w-100" alt="Hoa 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Thiết Kế Độc Đáo</h1>
+                    <p>Mỗi bó hoa là một tác phẩm nghệ thuật</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Giới Thiệu -->
+    <section id="gioi-thieu" class="section container-fluid">
+        <h2>Giới Thiệu</h2>
+        <div class="container_about row align-items-center">
+            <div class="col-md-6 block-left">
+                <img src="https://files.catbox.moe/sw67x9.webp" alt="Cửa hàng hoa" class="img-fluid rounded shadow mb-4">
+            </div>
+            <div class="col-md-6 block-right">
+                <h3 class="mb-3">Chào mừng đến với <i class="fa-solid fa-star-and-crescent"></i> cái tiệm hoa hòe</h3>
+                <p class="lead mb-4">Chúng tôi chuyên cung cấp các loại hoa tươi theo phong cách pastel nhẹ nhàng, phù hợp với mọi dịp lễ và sự kiện quan trọng của bạn.</p>
+                <div class="intro-features mb-4">
+                    <div class="feature-item mb-3">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>Hoa tươi nhập khẩu và trong nước chất lượng cao</span>
+                    </div>
+                    <div class="feature-item mb-3">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>Đội ngũ florist chuyên nghiệp, nhiều năm kinh nghiệm</span>
+                    </div>
+                    <div class="feature-item mb-3">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <span>Thiết kế độc đáo, phong cách riêng biệt</span>
+                    </div>
+                </div>
+                <p class="mb-4">Với hơn 5 năm kinh nghiệm trong ngành, chúng tôi tự hào mang đến những sản phẩm hoa tươi chất lượng cao, được chăm sóc tỉ mỉ và thiết kế theo phong cách độc đáo riêng biệt.</p>
+                <a href="/About/about.html" class="btn btn-primary mt-3">Xem thêm về chúng tôi</a>
+            </div>
+        </div>
+    </section>
+    <section id="san-pham" class="section container-fluid">
+        <h2>Sản Phẩm</h2>
+        <div class="product-grid row ">
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://flowercorner.b-cdn.net/image/cache/catalog/products/August%202023/bo-hoa-lavender-huong-lavender-21.jpg.webp"
+                    alt="Hoa 1">
+                <h3>Lavender</h3>
+                <p>Giá: 300.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details-lavender.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://flowercorner.b-cdn.net/image/cache/catalog/products/August%202023/hoa-cuoi-cam-tu-cau-ngat-xanh.jpg.webp"
+                    alt="Hoa 2">
+                <h3>Cẩm Tú Cầu</h3>
+                <p>Giá: 400.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details-cam-tu-cau.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://i0.wp.com/tiemhoabonmua.com/wp-content/uploads/2024/03/bo-hoa-ly-trang-1.jpg?fit=800%2C1011&ssl=1"
+                    alt="Hoa 3">
+                <h3>Ly Trắng</h3>
+                <p>Giá: 350.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details-ly-trang.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://tophanoiaz.com/wp-content/uploads/2023/10/hoa-tulip-ha-noi_2.jpg" alt="Hoa 4">
+                <h3>Tulip Hồng</h3>
+                <p>Giá: 500.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details-tulip-hong.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://tiemhoachumap.vn/wp-content/uploads/2022/12/dc-040.jpg" alt="Hoa 5">
+                <h3>Tulip Trắng</h3>
+                <p>Giá: 250.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://hoaviolet.com/image/bo-hoa-baby-tim-khong-lo-72762j.jpg" alt="Hoa 6">
+                <h3> Bi Tím</h3>
+                <p>Giá: 450.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://hoatuoiangel.com/upload/product/z550951311060323ee1b1f95cd8042621c903e48124d34-5049.jpg"
+                    alt="Hoa 7">
+                <h3>Hoa Hồng Tone Xanh</h3>
+                <p>Giá: 300.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://file.hstatic.net/200000427529/file/hoabotrangco1-9415_67befeda3aca40a8a46b5dca1628b472_grande.jpeg"
+                    alt="Hoa 8">
+                <h3>Hoa Hồng Trắng</h3>
+                <p>Giá: 600.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary btn-buy mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://saigonflowers.vn/wp-content/uploads/2016/07/nguon-goc-cuc-trang-sai-gon-flower.jpg"
+                    alt="Hoa 4">
+                <h3>Cúc trắng</h3>
+                <p>Giá: 500.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary btn-buy mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://tiemhoachumap.vn/wp-content/uploads/2022/12/dc-040.jpg" alt="Hoa 5">
+                <h3>Tulip Trắng</h3>
+                <p>Giá: 250.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary btn-buy mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://hoatuoidalat.vn/wp-content/uploads/2021/04/hoa-bo-thach-thao-tim-812x1024.jpg"
+                    alt="Hoa 6">
+                <h3> Thạch Thảo Tím</h3>
+                <p>Giá: 450.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary btn-buy mt-2">Chi tiết</a>
+            </div>
+            <div class="product-item col-md-3 col-sm-6 mb-4">
+                <img src="https://hoavaicaocapddp.com/upload/news/6-6534.jpg" alt="Hoa 7">
+                <h3>Mix (theo ngày)</h3>
+                <p>Giá: 700.000 VNĐ</p>
+                <button class="btn btn-outline-secondary btn-buy mt-2">mua</button>
+                <a href="/Details_Product/details.html" class="btn btn-outline-secondary btn-buy mt-2">Chi tiết</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dịch Vụ -->
+    <section id="dich-vu" class="section container-fluid title">
+        <h2 class="text-center mb-4">Dịch Vụ</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-3 text-center block">
+                <div class="card h-100 p-3">
+                    <i class="fas fa-gift fa-3x mb-3"></i>
+                    <h3>Gói Quà</h3>
+                    <p>Hoa được gói theo phong cách pastel độc đáo.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center block">
+                <div class="card h-100 p-3">
+                    <i class="fas fa-truck fa-3x mb-3"></i>
+                    <h3>Giao Hàng</h3>
+                    <p>Giao hoa tận nơi nhanh chóng và an toàn.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center block">
+                <div class="card h-100 p-3">
+                    <i class="fas fa-leaf fa-3x mb-3"></i>
+                    <h3>Hoa Tươi</h3>
+                    <p>Cam kết hoa tươi mỗi ngày, giữ được lâu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tin Tức -->
+    <section id="tin-tuc" class="section container-fluid title">
+        <h2 class="text-center mb-4">Tin Tức & Blog</h2>
+        <div class="news-grid row">
+            <div class="news_card col-sm-6 mb-4 w-100">
+                <div class="news-card">
+                    <img src="https://files.catbox.moe/y58w0y.jpg" alt="Xu hướng cắm hoa 2024" class="news-image">
+                    <div class="news-content">
+                        <h3>Xu hướng cắm hoa 2024</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 15/03/2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <p class="news-excerpt">Khám phá những xu hướng cắm hoa mới nhất trong năm 2024...</p>
+                        <a href="news-blogs/blog-xu-huong-2024.html" class="btn btn-outline-secondary">Đọc thêm</a>
+                        <div class="social-share">
+                            <a href="#" class="share-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_card col-md-3 col-sm-6 mb-4 w-100">
+                <div class="news-card">
+                    <img src="https://files.catbox.moe/y58w0y.jpg" alt="Xu hướng cắm hoa 2024" class="news-image">
+                    <div class="news-content">
+                        <h3>Xu hướng cắm hoa 2024</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 15/03/2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <p class="news-excerpt">Khám phá những xu hướng cắm hoa mới nhất trong năm 2024...</p>
+                        <a href="news-blogs/blog-xu-huong-2024.html" class="btn btn-outline-secondary">Đọc thêm</a>
+                        <div class="social-share">
+                            <a href="#" class="share-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_card col-md-3 col-sm-6 mb-4 w-100">
+                <div class="news-card">
+                    <img src="https://files.catbox.moe/y58w0y.jpg" alt="Xu hướng cắm hoa 2024" class="news-image">
+                    <div class="news-content">
+                        <h3>Xu hướng cắm hoa 2024</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 15/03/2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <p class="news-excerpt">Khám phá những xu hướng cắm hoa mới nhất trong năm 2024...</p>
+                        <a href="news-blogs/blog-xu-huong-2024.html" class="btn btn-outline-secondary">Đọc thêm</a>
+                        <div class="social-share">
+                            <a href="#" class="share-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_card col-md-3 col-sm-6 mb-4 w-100">
+                <div class="news-card">
+                    <img src="https://files.catbox.moe/y58w0y.jpg" alt="Xu hướng cắm hoa 2024" class="news-image">
+                    <div class="news-content">
+                        <h3>Xu hướng cắm hoa 2024</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 15/03/2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <p class="news-excerpt">Khám phá những xu hướng cắm hoa mới nhất trong năm 2024...</p>
+                        <a href="news-blogs/blog-xu-huong-2024.html" class="btn btn-outline-secondary">Đọc thêm</a>
+                        <div class="social-share">
+                            <a href="#" class="share-facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="news-blogs/blog.html" class="btn btn-primary">Xem tất cả bài viết</a>
+        </div>
+    </section>
+
+    <!-- Đánh Giá Khách Hàng -->
+    <section class="testimonials container-fluid title">
+        <h2>Khách Hàng Nói Gì?</h2>
+        <blockquote>
+            "Dịch vụ tuyệt vời, hoa đẹp và mùi thơm dễ chịu!" - Anh Thiên chia sẻ
+        </blockquote>
+        <blockquote>
+            "Mình rất thích tone pastel nhẹ nhàng, sẽ ủng hộ lâu dài!" - Anh Chai Xuân Huy cho biết
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid title" id="lien-he">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-4 contact-info">
+                <h2>Liên Hệ</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Hoa Pastel, Quận 1, TP.HCM</p>
+                    <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> lienhe@hoapastel.vn</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="col-lg-4 contact-form">
+                <h3>Gửi Tin Nhắn</h3>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Họ tên" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Nội dung" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+            </div>
+    
+            <!-- Google Maps -->
+            <div class="col-lg-4 map-container">
+                <h3>Bản Đồ</h3>
+                <div class="google-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674197956!2d106.69843037465353!3d10.778789989376163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a9d8d1bb3%3A0xc4b3b6340de93df0!2zMTIzIMSQxrDhu51uZyBQaOG6oW0gTmfFqSBMw6NvLCBQaMaw4budbmcgUGjhuqFtIE5nxakgTMOjbywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1710600161043!5m2!1svi!2s"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hoa Pastel. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

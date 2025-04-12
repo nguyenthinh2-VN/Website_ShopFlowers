@@ -1,0 +1,284 @@
+/* About Page Styles */
+.about-hero {
+    background-color: #f0e1f8;
+    padding: 120px 0 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@keyframes appear {
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  .title{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+  
+  .block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+
+
+.about-hero h1 {
+    color: #4b365f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.vision-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+}
+
+.vision-card i {
+    font-size: 2.5rem;
+    color: #a065c2;
+    margin-bottom: 20px;
+}
+
+.team-section {
+    padding: 80px 0;
+    background-color: #fdf5ff;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.journey-section {
+    padding: 80px 0;
+}
+
+.journey-timeline {
+    padding: 20px;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-left: 3px solid #a065c2;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #a065c2;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 28px;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0 40px;
+    }
+    
+    .vision-card {
+        margin-bottom: 20px;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .journey-timeline {
+        margin-top: 30px;
+    }
+}
+
+/* Remove the special CEO card styling and update with simpler version */
+.ceo-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ceo-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.ceo-card h4 {
+    color: #4b365f;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.ceo-card p {
+    color: #a065c2;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .ceo-card img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ceo-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .ceo-card p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile Responsive for Team Section */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 40px 15px;
+    }
+
+    .team-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .row.justify-content-center {
+        margin: 0 -10px;
+    }
+
+    .col-md-6 {
+        padding: 0 10px;
+    }
+
+    .team-member {
+        margin-bottom: 25px;
+    }
+
+    .team-member img {
+        width: 140px;
+        height: 140px;
+        border-width: 3px;
+    }
+
+    .team-member h4 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .team-member p {
+        font-size: 0.9rem;
+    }
+
+    /* CEO specific mobile styles */
+    .col-md-6.text-center .team-member {
+        margin-bottom: 35px;
+    }
+
+    .col-md-6.text-center .team-member img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .col-md-6.text-center .team-member h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+    .team-section {
+        padding: 30px 10px;
+    }
+
+    .col-md-6 .row {
+        margin: 0 -5px;
+    }
+
+    .col-md-6 {
+        padding: 0 5px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .col-md-6.text-center .team-member img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.return-home {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #a065c2;
+    border-color: #a065c2;
+}
+
+.return-home:hover {
+    background-color: #a065c2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .return-home {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}

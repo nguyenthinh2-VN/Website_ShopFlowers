@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Cửa Hàng Hoa Pastel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fffafc;
+            color: #4b365f;
+            line-height: 1.6;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .custom-navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8d9f0;
+            color: #4b365f;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4b365f;
+        }
+
+        .nav-link {
+            color: #4b365f !important;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            margin: 0 0.5rem;
+        }
+
+        .nav-link:hover {
+            color: #a065c2 !important;
+        }
+
+        .navbar-toggler {
+            border-color: #4b365f;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(75, 54, 95, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Product Details */
+        .product-details {
+            margin-top: 100px;
+            padding: 2rem;
+            background-color: #fdf5ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h1 {
+            color: #663f86;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #a065c2;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .product-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #a065c2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #8c5ac2;
+            transform: scale(1.05);
+        }
+
+        .product-features {
+            margin-top: 2rem;
+        }
+
+        .product-features h3 {
+            color: #663f86;
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "✿";
+            position: absolute;
+            left: 0;
+            color: #a065c2;
+        }
+
+        /* Related Products */
+        .related-products {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #fdf5ff;
+            border-radius: 10px;
+        }
+
+        .related-products h2 {
+            color: #663f86;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .related-item {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .related-item:hover {
+            transform: scale(1.03);
+            border-color: #a065c2;
+        }
+
+        .related-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .related-item h3 {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #4b365f;
+        }
+
+        .related-item p {
+            font-size: 0.9rem;
+            color: #5e4b6c;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #d7c4e2;
+            color: #4b365f;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer h2 {
+            margin-bottom: 1rem;
+        }
+
+        .footer .social-icons a {
+            margin: 0 0.5rem;
+            color: #4b365f;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-icons a:hover {
+            color: #8c5ac2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-info {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Shophoa.html"><i class="fa-solid fa-star-and-crescent"></i> cái tiệm hoa hòee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html#gioi-thieu">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html#dich-vu">Dịch Vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html#san-pham">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html#tin-tuc">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shophoa.html#lien-he">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="container">
+        <div class="product-details">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://flowercorner.b-cdn.net/image/cache/catalog/products/August%202023/bo-hoa-lavender-huong-lavender-21.jpg.webp"
+                        alt="Lavender" class="product-image">
+                </div>
+                <div class="col-md-6 product-info">
+                    <h1>Lavender</h1>
+                    <div class="product-price">300.000 VNĐ</div>
+                    <div class="product-description">
+                        <p>Bó hoa Lavender tươi mới, mang hương thơm dịu nhẹ, thư giãn. Được thiết kế theo phong cách
+                            pastel nhẹ nhàng, tinh tế, phù hợp để tặng trong các dịp đặc biệt hoặc trang trí không gian
+                            sống.</p>
+                    </div>
+                    <button class="buy-button">Thêm vào giỏ hàng</button>
+                    <div class="product-features">
+                        <h3>Đặc điểm sản phẩm:</h3>
+                        <ul class="feature-list">
+                            <li>Hoa tươi mới hàng ngày</li>
+                            <li>Giữ được 5-7 ngày trong điều kiện thường</li>
+                            <li>Gói giấy kraft cao cấp</li>
+                            <li>Miễn phí thiệp chúc mừng</li>
+                            <li>Giao hàng tận nơi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2>Sản phẩm liên quan</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="related-item">
+                        <img src="https://flowercorner.b-cdn.net/image/cache/catalog/products/August%202023/hoa-cuoi-cam-tu-cau-ngat-xanh.jpg.webp"
+                            alt="Cẩm Tú Cầu">
+                        <h3>Cẩm Tú Cầu</h3>
+                        <p>Giá: 400.000 VNĐ</p>
+                        <a href="#" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="related-item">
+                        <img src="https://i0.wp.com/tiemhoabonmua.com/wp-content/uploads/2024/03/bo-hoa-ly-trang-1.jpg?fit=800%2C1011&ssl=1"
+                            alt="Ly Trắng">
+                        <h3>Ly Trắng</h3>
+                        <p>Giá: 350.000 VNĐ</p>
+                        <a href="#" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="related-item">
+                        <img src="https://tophanoiaz.com/wp-content/uploads/2023/10/hoa-tulip-ha-noi_2.jpg"
+                            alt="Tulip Hồng">
+                        <h3>Tulip Hồng</h3>
+                        <p>Giá: 500.000 VNĐ</p>
+                        <a href="#" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="related-item">
+                        <img src="https://hoaviolet.com/image/bo-hoa-baby-tim-khong-lo-72762j.jpg" alt="Bi Tím">
+                        <h3>Bi Tím</h3>
+                        <p>Giá: 450.000 VNĐ</p>
+                        <a href="#" class="btn btn-outline-secondary mt-2">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="lien-he">
+        <h2>Liên Hệ</h2>
+        <p>Địa chỉ: 123 Hoa Pastel, Quận 1, TP.HCM</p>
+        <p>Điện thoại: 0123 456 789</p>
+        <p>Email: lienhe@hoapastel.vn</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Hoa Pastel. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
